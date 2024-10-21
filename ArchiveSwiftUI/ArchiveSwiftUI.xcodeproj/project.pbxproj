@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		15C38BE42C7B3A1C002660EB /* AlignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38BE32C7B3A1C002660EB /* AlignmentView.swift */; };
+		15C38CC02CC686A7002660EB /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38CBF2CC686A7002660EB /* OverlayView.swift */; };
 		15CAF2FF2C51362300A6E74E /* ArchiveSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CAF2FE2C51362300A6E74E /* ArchiveSwiftUIApp.swift */; };
 		15CAF3012C51362300A6E74E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CAF3002C51362300A6E74E /* ContentView.swift */; };
 		15CAF3032C51362500A6E74E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CAF3022C51362500A6E74E /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		15C38BE32C7B3A1C002660EB /* AlignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentView.swift; sourceTree = "<group>"; };
+		15C38CBF2CC686A7002660EB /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		15CAF2FB2C51362300A6E74E /* ArchiveSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchiveSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CAF2FE2C51362300A6E74E /* ArchiveSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveSwiftUIApp.swift; sourceTree = "<group>"; };
 		15CAF3002C51362300A6E74E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,9 +78,26 @@
 		15C38BE52C7B6CB9002660EB /* Lab */ = {
 			isa = PBXGroup;
 			children = (
-				15C38BE32C7B3A1C002660EB /* AlignmentView.swift */,
+				15C38CC22CC686BB002660EB /* Alignment */,
+				15C38CC12CC686B3002660EB /* Overlay */,
 			);
 			path = Lab;
+			sourceTree = "<group>";
+		};
+		15C38CC12CC686B3002660EB /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				15C38CBF2CC686A7002660EB /* OverlayView.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		15C38CC22CC686BB002660EB /* Alignment */ = {
+			isa = PBXGroup;
+			children = (
+				15C38BE32C7B3A1C002660EB /* AlignmentView.swift */,
+			);
+			path = Alignment;
 			sourceTree = "<group>";
 		};
 		15CAF2F22C51362300A6E74E = {
@@ -269,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15C38BE42C7B3A1C002660EB /* AlignmentView.swift in Sources */,
+				15C38CC02CC686A7002660EB /* OverlayView.swift in Sources */,
 				15CAF3012C51362300A6E74E /* ContentView.swift in Sources */,
 				15CAF2FF2C51362300A6E74E /* ArchiveSwiftUIApp.swift in Sources */,
 			);
