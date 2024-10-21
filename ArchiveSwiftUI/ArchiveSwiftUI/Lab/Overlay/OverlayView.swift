@@ -21,15 +21,13 @@ struct OverlayView: View {
                 viewSize = size
             })
             .overlay {
-                Overlay2View()
-                    .readSize(onChange: { size in
-                        view2Size = size
-                    })
-                    .offset(
-                        x: 0,
-                        y: viewSize.height/2 + view2Size.height/2
-                    )
-                
+                GeometryReader(content: { geometry in
+                    Overlay2View()
+                        .offset(
+                            x: 0,
+                            y: viewSize.height
+                        )
+                })
             }
     }
 }
