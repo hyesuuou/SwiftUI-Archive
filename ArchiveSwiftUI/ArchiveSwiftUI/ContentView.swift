@@ -26,6 +26,7 @@ extension ContentView {
     enum Row: CaseIterable, Hashable {
         case alignment
         case overlay
+        case animation
         
         var destination: any View {
             switch self {
@@ -33,6 +34,8 @@ extension ContentView {
                 AlignmentView()
             case .overlay:
                 OverlayView()
+            case .animation:
+                AnimationLabView()
             }
         }
     }
