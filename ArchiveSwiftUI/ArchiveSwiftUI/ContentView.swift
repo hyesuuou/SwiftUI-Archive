@@ -27,6 +27,7 @@ extension ContentView {
         case alignment
         case overlay
         case animation
+        case 상단탭바_좌우페이징
         
         var destination: any View {
             switch self {
@@ -36,6 +37,8 @@ extension ContentView {
                 OverlayView()
             case .animation:
                 AnimationLabView()
+            case .상단탭바_좌우페이징:
+                PageTabView()
             }
         }
     }

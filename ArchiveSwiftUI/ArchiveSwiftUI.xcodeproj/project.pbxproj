@@ -12,6 +12,10 @@
 		15C38CC42CC68CC9002660EB /* Overlay2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38CC32CC68CC9002660EB /* Overlay2View.swift */; };
 		15C38CC72CC68D91002660EB /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38CC62CC68D91002660EB /* View+.swift */; };
 		15C38CCA2CD12034002660EB /* AnimationLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38CC92CD12034002660EB /* AnimationLabView.swift */; };
+		15C38CCD2CECCB1C002660EB /* PageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38CCC2CECCB1C002660EB /* PageTabView.swift */; };
+		15C38CCF2CECCB63002660EB /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38CCE2CECCB63002660EB /* CustomTabView.swift */; };
+		15C38CD22CECCB9D002660EB /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38CD12CECCB9D002660EB /* Tab.swift */; };
+		15C38CD42CECD842002660EB /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38CD32CECD842002660EB /* Color+.swift */; };
 		15CAF2FF2C51362300A6E74E /* ArchiveSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CAF2FE2C51362300A6E74E /* ArchiveSwiftUIApp.swift */; };
 		15CAF3012C51362300A6E74E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CAF3002C51362300A6E74E /* ContentView.swift */; };
 		15CAF3032C51362500A6E74E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CAF3022C51362500A6E74E /* Assets.xcassets */; };
@@ -44,6 +48,10 @@
 		15C38CC32CC68CC9002660EB /* Overlay2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay2View.swift; sourceTree = "<group>"; };
 		15C38CC62CC68D91002660EB /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		15C38CC92CD12034002660EB /* AnimationLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationLabView.swift; sourceTree = "<group>"; };
+		15C38CCC2CECCB1C002660EB /* PageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTabView.swift; sourceTree = "<group>"; };
+		15C38CCE2CECCB63002660EB /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		15C38CD12CECCB9D002660EB /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		15C38CD32CECD842002660EB /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		15CAF2FB2C51362300A6E74E /* ArchiveSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchiveSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CAF2FE2C51362300A6E74E /* ArchiveSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveSwiftUIApp.swift; sourceTree = "<group>"; };
 		15CAF3002C51362300A6E74E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +92,7 @@
 		15C38BE52C7B6CB9002660EB /* Lab */ = {
 			isa = PBXGroup;
 			children = (
+				15C38CCB2CECCB13002660EB /* PageTab */,
 				15C38CC82CD1201B002660EB /* Animation */,
 				15C38CC22CC686BB002660EB /* Alignment */,
 				15C38CC12CC686B3002660EB /* Overlay */,
@@ -112,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				15C38CC62CC68D91002660EB /* View+.swift */,
+				15C38CD32CECD842002660EB /* Color+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -122,6 +132,24 @@
 				15C38CC92CD12034002660EB /* AnimationLabView.swift */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		15C38CCB2CECCB13002660EB /* PageTab */ = {
+			isa = PBXGroup;
+			children = (
+				15C38CD02CECCB98002660EB /* Model */,
+				15C38CCC2CECCB1C002660EB /* PageTabView.swift */,
+				15C38CCE2CECCB63002660EB /* CustomTabView.swift */,
+			);
+			path = PageTab;
+			sourceTree = "<group>";
+		};
+		15C38CD02CECCB98002660EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15C38CD12CECCB9D002660EB /* Tab.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		15CAF2F22C51362300A6E74E = {
@@ -315,8 +343,12 @@
 				15C38BE42C7B3A1C002660EB /* AlignmentView.swift in Sources */,
 				15C38CC02CC686A7002660EB /* OverlayView.swift in Sources */,
 				15C38CC42CC68CC9002660EB /* Overlay2View.swift in Sources */,
+				15C38CCD2CECCB1C002660EB /* PageTabView.swift in Sources */,
 				15C38CCA2CD12034002660EB /* AnimationLabView.swift in Sources */,
 				15CAF3012C51362300A6E74E /* ContentView.swift in Sources */,
+				15C38CCF2CECCB63002660EB /* CustomTabView.swift in Sources */,
+				15C38CD22CECCB9D002660EB /* Tab.swift in Sources */,
+				15C38CD42CECD842002660EB /* Color+.swift in Sources */,
 				15C38CC72CC68D91002660EB /* View+.swift in Sources */,
 				15CAF2FF2C51362300A6E74E /* ArchiveSwiftUIApp.swift in Sources */,
 			);
