@@ -17,7 +17,24 @@ struct PageTabView: View {
             Divider()
                 .foregroundStyle(Color.init(hex: "D5D6D8"))
             
-            Spacer() // TODO: TableView Representing 이용해서 만들기
+//            // TODO: TableView Representing 이용해서 만들기
+//            // TODO: 하단 좌우 스크롤 가능하게
+//            ScrollView(.horizontal) {
+//                LazyHStack(spacing: 0) {
+//                    Rectangle()
+//                        .foregroundStyle(.red)
+//                        .frame(width: UIScreen.)
+//                    
+//                    Rectangle()
+//                        .foregroundStyle(.yellow)
+//                        .containerRelativeFrame(.horizontal)
+//                    
+//                    Rectangle()
+//                        .foregroundStyle(.green)
+//                        .containerRelativeFrame(.horizontal)
+//                }
+//            }
+//            .scrollTargetBehavior(.paging)
         }
     }
 }

@@ -9,15 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
-            List(
-                Row.allCases,
-                id: \.self
-            ) { row in
-                NavigationLink("\(row)") {
-                    AnyView(row.destination)
+        if #available(iOS 16.0, *) {
+            NavigationStack {
+                List(
+                    Row.allCases,
+                    id: \.self
+                ) { row in
+                    NavigationLink("\(row)") {
+                        AnyView(row.destination)
+                    }
                 }
             }
+        } else {
+            // Fallback on earlier versions
         }
     }
 }

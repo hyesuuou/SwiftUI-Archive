@@ -37,7 +37,7 @@ struct CustomTabView: View {
             }
             .padding(.horizontal, 20)
         }
-        .scrollIndicators(.hidden)
+       // .scrollIndicators(.hidden)
         .frame(height: 32)
     }
     
