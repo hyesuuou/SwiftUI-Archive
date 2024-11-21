@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PageTabView: View {
-    @State private var selectedTabIndex: Int = 0
+    @State private var selectedTabId: String = "0"
     
     var body: some View {
         VStack(spacing: 0) {
@@ -43,16 +43,16 @@ private extension PageTabView {
     var tabView: some View {
         CustomTabView(
             tabs: [
-                .init(title: "야식"),
-                .init(title: "양식"),
-                .init(title: "족발 보쌈"),
-                .init(title: "양식"),
-                .init(title: "양식"),
-                .init(title: "돈까스.회·일식"),
-                .init(title: "족발 보쌈"),
-                .init(title: "양식"),
+                .init(id: "0", title: "야식"),
+                .init(id: "1", title: "양식"),
+                .init(id: "2", title: "족발 보쌈"),
+                .init(id: "3", title: "양식"),
+                .init(id: "4", title: "양식"),
+                .init(id: "5", title: "돈까스.회·일식"),
+                .init(id: "6", title: "족발 보쌈"),
+                .init(id: "7", title: "양식"),
             ],
-            selectedIdx: $selectedTabIndex
+            selectedId: $selectedTabId
         )
     }
 }

@@ -17,6 +17,16 @@ extension View {
         )
         .onPreferenceChange(SizePreferenceKey.self, perform: onChange)
     }
+    
+    func paging() -> some View {
+        if #available(iOS 17.0, *) {
+            return self.scrollTargetBehavior(.paging)
+        } else {
+            return self.onAppear {
+                UIScrollView.appearance().isPagingEnabled = true
+            }
+        }
+    }
 }
 
 struct SizePreferenceKey: PreferenceKey {

@@ -8,6 +8,6 @@
 import Foundation
 
 struct Tab {
-    let id: UUID = UUID()
+    let id: String
     let title: String
 }

@@ -32,6 +32,7 @@ extension ContentView {
         case overlay
         case animation
         case 상단탭바_좌우페이징
+        case 배민_가게목록_클론
         
         var destination: any View {
             switch self {
@@ -43,6 +44,8 @@ extension ContentView {
                 AnimationLabView()
             case .상단탭바_좌우페이징:
                 PageTabView()
+            case .배민_가게목록_클론:
+                DeliveryStoreListCloneView()
             }
         }
     }

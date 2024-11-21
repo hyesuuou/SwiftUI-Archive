@@ -7,17 +7,16 @@
 
 import SwiftUI
 
-/// 배민 탭바
 struct CustomTabView: View {
     private var tabs: [Tab] = []
-    @Binding var selectedIdx: Int
+    @Binding var selectedId: String
     
     init(
         tabs: [Tab],
-        selectedIdx: Binding<Int>
+        selectedId: Binding<String>
     ) {
         self.tabs = tabs
-        self._selectedIdx = selectedIdx
+        self._selectedId = selectedId
     }
     
     var body: some View {
@@ -26,12 +25,10 @@ struct CustomTabView: View {
                 ForEach(tabs, id: \.id) { tab in
                     tabView(
                         tab: tab,
-                        isSelected: tab.id == tabs[selectedIdx].id
+                        isSelected: tab.id == selectedId
                     )
                     .onTapGesture {
-                        selectedIdx = tabs.firstIndex(where: { tmp in
-                            tmp.id == tab.id
-                        }) ?? 0
+                        selectedId = tab.id
                     }
                 }
             }
@@ -65,15 +62,15 @@ struct CustomTabView: View {
     
     CustomTabView(
         tabs: [
-            .init(title: "야식"),
-            .init(title: "양식"),
-            .init(title: "족발 보쌈"),
-            .init(title: "양식"),
-            .init(title: "양식"),
-            .init(title: "돈까스.회·일식"),
-            .init(title: "족발 보쌈"),
-            .init(title: "양식"),
+            .init(id: "0", title: "야식"),
+            .init(id: "1", title: "양식"),
+            .init(id: "2", title: "족발 보쌈"),
+            .init(id: "3", title: "양식"),
+            .init(id: "4", title: "양식"),
+            .init(id: "5", title: "돈까스.회·일식"),
+            .init(id: "6", title: "족발 보쌈"),
+            .init(id: "7", title: "양식"),
         ],
-        selectedIdx: .constant(0)
+        selectedId: .constant("0")
     )
 }

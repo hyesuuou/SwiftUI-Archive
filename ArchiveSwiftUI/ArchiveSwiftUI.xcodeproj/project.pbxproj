@@ -18,6 +18,9 @@
 		15C38CD42CECD842002660EB /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38CD32CECD842002660EB /* Color+.swift */; };
 		15C38CD72CEE1D15002660EB /* CoordinateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38CD62CEE1D15002660EB /* CoordinateView.swift */; };
 		15C38CD92CEE2164002660EB /* Coordinate2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38CD82CEE2164002660EB /* Coordinate2View.swift */; };
+		15C38CDC2CEF5A71002660EB /* DeliveryCloneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38CDB2CEF5A71002660EB /* DeliveryCloneView.swift */; };
+		15C38CE02CEF5C28002660EB /* DeliveryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38CDF2CEF5C28002660EB /* DeliveryStore.swift */; };
+		15C38CE22CEF5C98002660EB /* DeliveryCloneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38CE12CEF5C98002660EB /* DeliveryCloneViewModel.swift */; };
 		15CAF2FF2C51362300A6E74E /* ArchiveSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CAF2FE2C51362300A6E74E /* ArchiveSwiftUIApp.swift */; };
 		15CAF3012C51362300A6E74E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CAF3002C51362300A6E74E /* ContentView.swift */; };
 		15CAF3032C51362500A6E74E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CAF3022C51362500A6E74E /* Assets.xcassets */; };
@@ -56,6 +59,9 @@
 		15C38CD32CECD842002660EB /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		15C38CD62CEE1D15002660EB /* CoordinateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateView.swift; sourceTree = "<group>"; };
 		15C38CD82CEE2164002660EB /* Coordinate2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate2View.swift; sourceTree = "<group>"; };
+		15C38CDB2CEF5A71002660EB /* DeliveryCloneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryCloneView.swift; sourceTree = "<group>"; };
+		15C38CDF2CEF5C28002660EB /* DeliveryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryStore.swift; sourceTree = "<group>"; };
+		15C38CE12CEF5C98002660EB /* DeliveryCloneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryCloneViewModel.swift; sourceTree = "<group>"; };
 		15CAF2FB2C51362300A6E74E /* ArchiveSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchiveSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CAF2FE2C51362300A6E74E /* ArchiveSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveSwiftUIApp.swift; sourceTree = "<group>"; };
 		15CAF3002C51362300A6E74E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -166,6 +172,32 @@
 			path = Coordinate;
 			sourceTree = "<group>";
 		};
+		15C38CDA2CEF5A62002660EB /* Clone */ = {
+			isa = PBXGroup;
+			children = (
+				15C38CDD2CEF5BE2002660EB /* Delivery */,
+			);
+			path = Clone;
+			sourceTree = "<group>";
+		};
+		15C38CDD2CEF5BE2002660EB /* Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				15C38CDE2CEF5C1F002660EB /* Model */,
+				15C38CDB2CEF5A71002660EB /* DeliveryCloneView.swift */,
+				15C38CE12CEF5C98002660EB /* DeliveryCloneViewModel.swift */,
+			);
+			path = Delivery;
+			sourceTree = "<group>";
+		};
+		15C38CDE2CEF5C1F002660EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15C38CDF2CEF5C28002660EB /* DeliveryStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		15CAF2F22C51362300A6E74E = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +221,7 @@
 		15CAF2FD2C51362300A6E74E /* ArchiveSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				15C38CDA2CEF5A62002660EB /* Clone */,
 				15C38CC52CC68D87002660EB /* Extension */,
 				15C38BE52C7B6CB9002660EB /* Lab */,
 				15CAF2FE2C51362300A6E74E /* ArchiveSwiftUIApp.swift */,
@@ -362,11 +395,14 @@
 				15C38CCA2CD12034002660EB /* AnimationLabView.swift in Sources */,
 				15CAF3012C51362300A6E74E /* ContentView.swift in Sources */,
 				15C38CCF2CECCB63002660EB /* CustomTabView.swift in Sources */,
+				15C38CE22CEF5C98002660EB /* DeliveryCloneViewModel.swift in Sources */,
+				15C38CDC2CEF5A71002660EB /* DeliveryCloneView.swift in Sources */,
 				15C38CD92CEE2164002660EB /* Coordinate2View.swift in Sources */,
 				15C38CD22CECCB9D002660EB /* Tab.swift in Sources */,
 				15C38CD42CECD842002660EB /* Color+.swift in Sources */,
 				15C38CC72CC68D91002660EB /* View+.swift in Sources */,
 				15CAF2FF2C51362300A6E74E /* ArchiveSwiftUIApp.swift in Sources */,
+				15C38CE02CEF5C28002660EB /* DeliveryStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
